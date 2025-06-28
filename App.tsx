@@ -29,9 +29,9 @@ const App: React.FC = () => {
             <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-2xl mx-auto">Scalable Ad Systems That Multiply Sales — No Content Creation Required</p>
             <div className="bg-slate-900/60 backdrop-blur-md border border-white/10 rounded-3xl inline-block p-6">
                  <p className="text-2xl font-bold text-white mb-4">Sloe Media</p>
-                 <button onClick={() => goToSlide(14)} className="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105">
+                 <a href="https://calendly.com/electrofyne/30min" target="_blank" rel="noopener noreferrer" className="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105 inline-block">
                      Book a Free Strategy Call
-                 </button>
+                 </a>
                  <p className="text-sm text-slate-500 mt-4">mediasloe@gmail.com | @sloemedia</p>
             </div>
         </div>,
@@ -155,7 +155,7 @@ const App: React.FC = () => {
                          <li className="flex items-center"><CheckmarkIcon className="w-5 h-5 mr-3 text-green-400" />Initial campaign structure setup</li>
                          <li className="flex items-center"><CheckmarkIcon className="w-5 h-5 mr-3 text-green-400" />Base automation rules installed</li>
                     </ul>
-                     <button onClick={() => goToSlide(14)} className="mt-auto w-full bg-slate-700 hover:bg-slate-600 text-white font-bold py-3 px-6 rounded-lg transition-colors">Choose Sprint</button>
+                     <a href="https://calendly.com/electrofyne/30min" target="_blank" rel="noopener noreferrer" className="mt-auto w-full bg-slate-700 hover:bg-slate-600 text-white font-bold py-3 px-6 rounded-lg transition-colors text-center block">Choose Sprint</a>
                 </div>
                 <div className="bg-slate-900/60 backdrop-blur-md border-2 border-violet-500 rounded-3xl p-8 w-full max-w-sm text-left flex flex-col relative transform md:scale-105">
                     <div className="absolute -top-4 right-6 bg-purple-500 text-white text-sm font-bold px-4 py-1 rounded-full">POPULAR</div>
@@ -168,7 +168,7 @@ const App: React.FC = () => {
                         <li className="flex items-center"><CheckmarkIcon className="w-5 h-5 mr-3 text-green-400" />Advanced retargeting & automation</li>
                         <li className="flex items-center"><CheckmarkIcon className="w-5 h-5 mr-3 text-green-400" />Live reporting dashboard</li>
                     </ul>
-                     <button onClick={() => goToSlide(14)} className="mt-auto w-full bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-6 rounded-lg transition-colors">Get Started</button>
+                     <a href="https://calendly.com/electrofyne/30min" target="_blank" rel="noopener noreferrer" className="mt-auto w-full bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-6 rounded-lg transition-colors text-center block">Get Started</a>
                 </div>
             </div>
         </div>,
@@ -269,18 +269,6 @@ const App: React.FC = () => {
             </div>
         </div>,
         // Slide 13
-        <div className="max-w-3xl w-full">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-10">Our Leadership</h2>
-            <div className="bg-slate-900/60 backdrop-blur-md border border-white/10 rounded-3xl p-10 text-center">
-                <img src="https://picsum.photos/seed/sloe-media-founder/128" className="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-slate-700" alt="Founder Photo"/>
-                <h3 className="text-3xl font-bold text-white">[Your Name Here]</h3>
-                <p className="text-sky-400 font-semibold mb-4">Founder, Sloe Media</p>
-                <p className="text-slate-300 max-w-xl mx-auto">
-                   As the driving force behind Sloe Media, [Your Name] brings a profound belief in the power of AI to transform business capabilities. Our personal journey with AI has been game-changing, and we are passionate about sharing this transformative technology with our clients to pioneer the future of brand marketing.
-                </p>
-            </div>
-        </div>,
-        // Slide 14
         <div className="bg-slate-900/60 backdrop-blur-md border border-white/10 rounded-3xl max-w-3xl w-full p-12 shadow-2xl shadow-sky-500/10">
             <h2 className="text-4xl md:text-6xl font-extrabold text-white mb-4">Let's build your<br/><HighlightText>growth engine.</HighlightText></h2>
             <p className="text-xl text-slate-300 mb-8">Book a free, no-obligation strategy call to see if we're a good fit.</p>
@@ -292,7 +280,7 @@ const App: React.FC = () => {
                 <p className="font-semibold text-white mt-1">mediasloe@gmail.com | IG: @sloemedia</p>
             </div>
         </div>,
-        // Slide 15
+        // Slide 14
         <div className="text-center">
             <SloeLogoIcon className="w-16 h-16 mx-auto mb-4 text-sky-400" />
             <h2 className="text-6xl font-bold text-white mb-2">Sloe Media</h2>
