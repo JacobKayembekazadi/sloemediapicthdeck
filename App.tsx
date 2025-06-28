@@ -24,37 +24,37 @@ const App: React.FC = () => {
     
     const slides: React.ReactNode[] = [
         // Slide 1
-        <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-4">The <HighlightText>AI Growth Engine</HighlightText></h1>
-            <p className="text-xl md:text-2xl text-slate-300 mb-8 max-w-2xl mx-auto">Scalable Ad Systems That Multiply Sales — No Content Creation Required</p>
-            <div className="bg-slate-900/60 backdrop-blur-md border border-white/10 rounded-3xl inline-block p-6">
-                 <p className="text-2xl font-bold text-white mb-4">Sloe Media</p>
-                 <a href="https://calendly.com/electrofyne/30min" target="_blank" rel="noopener noreferrer" className="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-6 rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105 inline-block">
+        <div className="max-w-4xl mx-auto text-center px-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-white mb-4 mobile-text-4xl">The <HighlightText>AI Growth Engine</HighlightText></h1>
+            <p className="text-lg sm:text-xl md:text-2xl text-slate-300 mb-6 sm:mb-8 max-w-2xl mx-auto mobile-text-lg">Scalable Ad Systems That Multiply Sales — No Content Creation Required</p>
+            <div className="bg-slate-900/60 backdrop-blur-md border border-white/10 rounded-3xl inline-block p-4 sm:p-6 mobile-p-4">
+                 <p className="text-xl sm:text-2xl font-bold text-white mb-4 mobile-text-xl">Sloe Media</p>
+                 <a href="https://calendly.com/electrofyne/30min" target="_blank" rel="noopener noreferrer" className="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-4 sm:px-6 rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105 inline-block text-sm sm:text-base">
                      Book a Free Strategy Call
                  </a>
-                 <p className="text-sm text-slate-500 mt-4">mediasloe@gmail.com | @sloemedia</p>
+                 <p className="text-xs sm:text-sm text-slate-500 mt-4">mediasloe@gmail.com | @sloemedia</p>
             </div>
         </div>,
         // Slide 2
-        <div className="max-w-5xl w-full">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-10">Engineered For Your Business Model</h2>
-            <div className="grid md:grid-cols-2 gap-8 text-left">
-                <div className="bg-slate-900/60 backdrop-blur-md border border-white/10 rounded-3xl p-8">
-                    <h3 className="text-2xl font-bold text-white mb-4">🧢 For Product-Based Brands</h3>
-                    <p className="text-slate-400 mb-4">eCommerce, Fashion, Beauty, DTC</p>
-                    <ul className="space-y-3 text-slate-300 text-lg">
-                        <li className="flex items-start"><CheckmarkIcon className="w-6 h-6 mr-2 text-green-400 flex-shrink-0" /><span>Solve low ROAS & creative burnout</span></li>
-                        <li className="flex items-start"><CheckmarkIcon className="w-6 h-6 mr-2 text-green-400 flex-shrink-0" /><span>Optimize with UGC, retargeting & automations</span></li>
-                        <li className="flex items-start"><CheckmarkIcon className="w-6 h-6 mr-2 text-green-400 flex-shrink-0" /><span>Focus on ROAS, Cost per Purchase, AOV</span></li>
+        <div className="max-w-5xl w-full px-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 sm:mb-8 md:mb-10 mobile-text-3xl">Engineered For Your Business Model</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 text-left mobile-gap-6">
+                <div className="bg-slate-900/60 backdrop-blur-md border border-white/10 rounded-3xl p-6 sm:p-8 mobile-p-6">
+                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 mobile-text-2xl">🧢 For Product-Based Brands</h3>
+                    <p className="text-slate-400 mb-4 text-sm sm:text-base mobile-text-sm">eCommerce, Fashion, Beauty, DTC</p>
+                    <ul className="space-y-3 text-slate-300 text-base sm:text-lg mobile-text-base">
+                        <li className="flex items-start"><CheckmarkIcon className="w-5 h-5 sm:w-6 sm:h-6 mr-2 text-green-400 flex-shrink-0 mt-0.5" /><span>Solve low ROAS & creative burnout</span></li>
+                        <li className="flex items-start"><CheckmarkIcon className="w-5 h-5 sm:w-6 sm:h-6 mr-2 text-green-400 flex-shrink-0 mt-0.5" /><span>Optimize with UGC, retargeting & automations</span></li>
+                        <li className="flex items-start"><CheckmarkIcon className="w-5 h-5 sm:w-6 sm:h-6 mr-2 text-green-400 flex-shrink-0 mt-0.5" /><span>Focus on ROAS, Cost per Purchase, AOV</span></li>
                     </ul>
                 </div>
-                <div className="bg-slate-900/60 backdrop-blur-md border border-white/10 rounded-3xl p-8">
-                    <h3 className="text-2xl font-bold text-white mb-4">🧠 For Service-Based Clients</h3>
-                     <p className="text-slate-400 mb-4">Coaches, Personal Brands, Info Products</p>
-                    <ul className="space-y-3 text-slate-300 text-lg">
-                        <li className="flex items-start"><CheckmarkIcon className="w-6 h-6 mr-2 text-green-400 flex-shrink-0" /><span>End inconsistent income & manual lead gen</span></li>
-                        <li className="flex items-start"><CheckmarkIcon className="w-6 h-6 mr-2 text-green-400 flex-shrink-0" /><span>Automate lead capture, qualification & closing</span></li>
-                        <li className="flex items-start"><CheckmarkIcon className="w-6 h-6 mr-2 text-green-400 flex-shrink-0" /><span>Focus on CPL, Booking %, and CVR</span></li>
+                <div className="bg-slate-900/60 backdrop-blur-md border border-white/10 rounded-3xl p-6 sm:p-8 mobile-p-6">
+                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-4 mobile-text-2xl">🧠 For Service-Based Clients</h3>
+                     <p className="text-slate-400 mb-4 text-sm sm:text-base mobile-text-sm">Coaches, Personal Brands, Info Products</p>
+                    <ul className="space-y-3 text-slate-300 text-base sm:text-lg mobile-text-base">
+                        <li className="flex items-start"><CheckmarkIcon className="w-5 h-5 sm:w-6 sm:h-6 mr-2 text-green-400 flex-shrink-0 mt-0.5" /><span>End inconsistent income & manual lead gen</span></li>
+                        <li className="flex items-start"><CheckmarkIcon className="w-5 h-5 sm:w-6 sm:h-6 mr-2 text-green-400 flex-shrink-0 mt-0.5" /><span>Automate lead capture, qualification & closing</span></li>
+                        <li className="flex items-start"><CheckmarkIcon className="w-5 h-5 sm:w-6 sm:h-6 mr-2 text-green-400 flex-shrink-0 mt-0.5" /><span>Focus on CPL, Booking %, and CVR</span></li>
                     </ul>
                 </div>
             </div>
@@ -142,33 +142,33 @@ const App: React.FC = () => {
              </div>
         </div>,
         // Slide 8
-        <div className="max-w-6xl w-full">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-10">Our Offers</h2>
-            <div className="flex flex-col md:flex-row justify-center items-center md:items-stretch gap-8">
-                <div className="bg-slate-900/60 backdrop-blur-md border border-white/10 rounded-3xl p-8 w-full max-w-sm text-left flex flex-col">
-                    <h3 className="text-3xl font-bold text-white">🚀 ScaleKit Sprint</h3>
-                    <p className="text-4xl font-extrabold text-white my-4">$1,500 <span className="text-lg font-normal text-slate-400">/one-time</span></p>
-                    <p className="text-slate-400 mb-6 flex-grow">A low-risk audit & strategy one-off to install the foundations and get immediate clarity.</p>
-                    <ul className="space-y-3 text-slate-300 mb-8">
-                         <li className="flex items-center"><CheckmarkIcon className="w-5 h-5 mr-3 text-green-400" />Complete funnel & offer audit</li>
-                         <li className="flex items-center"><CheckmarkIcon className="w-5 h-5 mr-3 text-green-400" />3x AI-powered content briefs</li>
-                         <li className="flex items-center"><CheckmarkIcon className="w-5 h-5 mr-3 text-green-400" />Initial campaign structure setup</li>
-                         <li className="flex items-center"><CheckmarkIcon className="w-5 h-5 mr-3 text-green-400" />Base automation rules installed</li>
+        <div className="max-w-6xl w-full px-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 sm:mb-8 md:mb-10 mobile-text-3xl">Our Offers</h2>
+            <div className="flex flex-col lg:flex-row justify-center items-center lg:items-stretch gap-6 sm:gap-8 mobile-gap-6">
+                <div className="bg-slate-900/60 backdrop-blur-md border border-white/10 rounded-3xl p-6 sm:p-8 w-full max-w-sm text-left flex flex-col mobile-p-6">
+                    <h3 className="text-2xl sm:text-3xl font-bold text-white mobile-text-2xl">🚀 ScaleKit Sprint</h3>
+                    <p className="text-3xl sm:text-4xl font-extrabold text-white my-4 mobile-text-3xl">$1,500 <span className="text-base sm:text-lg font-normal text-slate-400 mobile-text-base">/one-time</span></p>
+                    <p className="text-slate-400 mb-6 flex-grow text-sm sm:text-base mobile-text-sm">A low-risk audit & strategy one-off to install the foundations and get immediate clarity.</p>
+                    <ul className="space-y-3 text-slate-300 mb-6 sm:mb-8 text-sm sm:text-base mobile-text-sm mobile-mb-6">
+                         <li className="flex items-center"><CheckmarkIcon className="w-4 h-4 sm:w-5 sm:h-5 mr-3 text-green-400 flex-shrink-0" />Complete funnel & offer audit</li>
+                         <li className="flex items-center"><CheckmarkIcon className="w-4 h-4 sm:w-5 sm:h-5 mr-3 text-green-400 flex-shrink-0" />3x AI-powered content briefs</li>
+                         <li className="flex items-center"><CheckmarkIcon className="w-4 h-4 sm:w-5 sm:h-5 mr-3 text-green-400 flex-shrink-0" />Initial campaign structure setup</li>
+                         <li className="flex items-center"><CheckmarkIcon className="w-4 h-4 sm:w-5 sm:h-5 mr-3 text-green-400 flex-shrink-0" />Base automation rules installed</li>
                     </ul>
-                     <a href="https://calendly.com/electrofyne/30min" target="_blank" rel="noopener noreferrer" className="mt-auto w-full bg-slate-700 hover:bg-slate-600 text-white font-bold py-3 px-6 rounded-lg transition-colors text-center block">Choose Sprint</a>
+                     <a href="https://calendly.com/electrofyne/30min" target="_blank" rel="noopener noreferrer" className="mt-auto w-full bg-slate-700 hover:bg-slate-600 text-white font-bold py-3 px-4 sm:px-6 rounded-lg transition-colors text-center block text-sm sm:text-base">Choose Sprint</a>
                 </div>
-                <div className="bg-slate-900/60 backdrop-blur-md border-2 border-violet-500 rounded-3xl p-8 w-full max-w-sm text-left flex flex-col relative transform md:scale-105">
-                    <div className="absolute -top-4 right-6 bg-purple-500 text-white text-sm font-bold px-4 py-1 rounded-full">POPULAR</div>
-                    <h3 className="text-3xl font-bold text-white">📈 Full ScaleKit System</h3>
-                    <p className="text-4xl font-extrabold text-white my-4">$3,750 <span className="text-lg font-normal text-slate-400">/mo</span></p>
-                    <p className="text-slate-400 mb-6 flex-grow">Our complete Done-For-You growth system for continuous scaling. (Packages from $2.5k-$5k)</p>
-                    <ul className="space-y-3 text-slate-300 mb-8">
-                        <li className="flex items-center"><CheckmarkIcon className="w-5 h-5 mr-3 text-green-400" />Weekly briefs & optimization</li>
-                        <li className="flex items-center"><CheckmarkIcon className="w-5 h-5 mr-3 text-green-400" />Multi-platform ad management</li>
-                        <li className="flex items-center"><CheckmarkIcon className="w-5 h-5 mr-3 text-green-400" />Advanced retargeting & automation</li>
-                        <li className="flex items-center"><CheckmarkIcon className="w-5 h-5 mr-3 text-green-400" />Live reporting dashboard</li>
+                <div className="bg-slate-900/60 backdrop-blur-md border-2 border-violet-500 rounded-3xl p-6 sm:p-8 w-full max-w-sm text-left flex flex-col relative transform lg:scale-105 mobile-p-6">
+                    <div className="absolute -top-4 right-4 sm:right-6 bg-purple-500 text-white text-xs sm:text-sm font-bold px-3 sm:px-4 py-1 rounded-full">POPULAR</div>
+                    <h3 className="text-2xl sm:text-3xl font-bold text-white mobile-text-2xl">📈 Full ScaleKit System</h3>
+                    <p className="text-3xl sm:text-4xl font-extrabold text-white my-4 mobile-text-3xl">$3,750 <span className="text-base sm:text-lg font-normal text-slate-400 mobile-text-base">/mo</span></p>
+                    <p className="text-slate-400 mb-6 flex-grow text-sm sm:text-base mobile-text-sm">Our complete Done-For-You growth system for continuous scaling. (Packages from $2.5k-$5k)</p>
+                    <ul className="space-y-3 text-slate-300 mb-6 sm:mb-8 text-sm sm:text-base mobile-text-sm mobile-mb-6">
+                        <li className="flex items-center"><CheckmarkIcon className="w-4 h-4 sm:w-5 sm:h-5 mr-3 text-green-400 flex-shrink-0" />Weekly briefs & optimization</li>
+                        <li className="flex items-center"><CheckmarkIcon className="w-4 h-4 sm:w-5 sm:h-5 mr-3 text-green-400 flex-shrink-0" />Multi-platform ad management</li>
+                        <li className="flex items-center"><CheckmarkIcon className="w-4 h-4 sm:w-5 sm:h-5 mr-3 text-green-400 flex-shrink-0" />Advanced retargeting & automation</li>
+                        <li className="flex items-center"><CheckmarkIcon className="w-4 h-4 sm:w-5 sm:h-5 mr-3 text-green-400 flex-shrink-0" />Live reporting dashboard</li>
                     </ul>
-                     <a href="https://calendly.com/electrofyne/30min" target="_blank" rel="noopener noreferrer" className="mt-auto w-full bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-6 rounded-lg transition-colors text-center block">Get Started</a>
+                     <a href="https://calendly.com/electrofyne/30min" target="_blank" rel="noopener noreferrer" className="mt-auto w-full bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-4 sm:px-6 rounded-lg transition-colors text-center block text-sm sm:text-base">Get Started</a>
                 </div>
             </div>
         </div>,
@@ -202,33 +202,33 @@ const App: React.FC = () => {
             <p className="mt-8 text-slate-400 italic">Optional: 90-day expansion roadmaps available for larger clients.</p>
         </div>,
         // Slide 10
-        <div className="max-w-4xl w-full">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-10">We Focus On Measurable Impact</h2>
-            <div className="bg-slate-900/60 backdrop-blur-md border border-white/10 rounded-3xl p-8">
-                <div className="bg-slate-900 rounded-lg p-6 border border-slate-700 mb-6">
-                    <div className="flex justify-between items-center mb-4">
-                        <h3 className="text-xl font-bold text-white">KPI Dashboard</h3>
-                        <span className="text-sm text-slate-400">Real-Time Data</span>
+        <div className="max-w-4xl w-full px-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 sm:mb-8 md:mb-10 mobile-text-3xl">We Focus On Measurable Impact</h2>
+            <div className="bg-slate-900/60 backdrop-blur-md border border-white/10 rounded-3xl p-4 sm:p-6 md:p-8 mobile-p-6">
+                <div className="bg-slate-900 rounded-lg p-4 sm:p-6 border border-slate-700 mb-4 sm:mb-6 mobile-p-4 mobile-mb-6">
+                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 text-center sm:text-left">
+                        <h3 className="text-lg sm:text-xl font-bold text-white mobile-text-lg">KPI Dashboard</h3>
+                        <span className="text-xs sm:text-sm text-slate-400 mobile-text-sm">Real-Time Data</span>
                     </div>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mobile-gap-4">
                         <div className="text-center">
-                            <p className="text-sm text-slate-400">ROAS</p>
-                            <p className="text-3xl font-bold text-green-400 flex items-center justify-center">5.0x <ArrowUpIcon className="w-5 h-5 ml-1" /></p>
+                            <p className="text-xs sm:text-sm text-slate-400 mobile-text-sm">ROAS</p>
+                            <p className="text-2xl sm:text-3xl font-bold text-green-400 flex items-center justify-center mobile-text-2xl">5.0x <ArrowUpIcon className="w-4 h-4 sm:w-5 sm:h-5 ml-1" /></p>
                             <p className="text-xs text-slate-500">from 2.2x</p>
                         </div>
                         <div className="text-center">
-                            <p className="text-sm text-slate-400">Cost per Purchase</p>
-                            <p className="text-3xl font-bold text-white">$24.20</p>
+                            <p className="text-xs sm:text-sm text-slate-400 mobile-text-sm">Cost per Purchase</p>
+                            <p className="text-2xl sm:text-3xl font-bold text-white mobile-text-2xl">$24.20</p>
                             <p className="text-xs text-slate-500">target: $25</p>
                         </div>
                         <div className="text-center">
-                            <p className="text-sm text-slate-400">Booking %</p>
-                            <p className="text-3xl font-bold text-white">15%</p>
+                            <p className="text-xs sm:text-sm text-slate-400 mobile-text-sm">Booking %</p>
+                            <p className="text-2xl sm:text-3xl font-bold text-white mobile-text-2xl">15%</p>
                             <p className="text-xs text-slate-500">from leads</p>
                         </div>
                         <div className="text-center">
-                            <p className="text-sm text-slate-400">Funnel CVR</p>
-                            <p className="text-3xl font-bold text-white">4.2%</p>
+                            <p className="text-xs sm:text-sm text-slate-400 mobile-text-sm">Funnel CVR</p>
+                            <p className="text-2xl sm:text-3xl font-bold text-white mobile-text-2xl">4.2%</p>
                              <p className="text-xs text-slate-500">+1.8% lift</p>
                         </div>
                     </div>
