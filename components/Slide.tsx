@@ -9,7 +9,7 @@ interface SlideProps {
 export const Slide: React.FC<SlideProps> = ({ isActive, children }) => {
     return (
         <div
-            className={`w-full h-full absolute top-0 left-0 flex flex-col justify-center items-center p-4 sm:p-6 md:p-8 text-center transition-opacity duration-700 ease-in-out mobile-slide-padding ${
+            className={`w-full h-full absolute top-0 left-0 flex flex-col justify-center items-center p-4 md:p-8 text-center transition-opacity duration-700 ease-in-out ${
                 isActive ? 'opacity-100 z-10' : 'opacity-0 z-0'
             }`}
             style={{ pointerEvents: isActive ? 'auto' : 'none' }}
