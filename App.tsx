@@ -1,8 +1,8 @@
-
 import React, { useState, useEffect, useCallback } from 'react';
 import { ThreeDBackground } from './components/ThreeDBackground';
 import { Navigation } from './components/Navigation';
 import { Slide } from './components/Slide';
+import { AdminPanel } from './components/AdminPanel';
 import { CheckmarkIcon, MapIcon, CogIcon, TrendingUpIcon, ArrowUpIcon, QuoteIcon, BoltIcon, DocumentIcon, SyncIcon, SloeLogoIcon } from './components/Icons';
 
 const HighlightText = ({ children }: { children: React.ReactNode }) => (
@@ -21,6 +21,7 @@ const TimelineItem = ({ step, title, description, isLast = false }: { step: stri
 
 const App: React.FC = () => {
     const [currentSlide, setCurrentSlide] = useState(1);
+    const [showAdminPanel, setShowAdminPanel] = useState(false);
     
     const slides: React.ReactNode[] = [
         // Slide 1
@@ -310,6 +311,13 @@ const App: React.FC = () => {
                 nextSlide();
             } else if (e.key === 'ArrowLeft') {
                 prevSlide();
+            } else if (e.key === 'i' && (e.ctrlKey || e.metaKey)) {
+                // Ctrl+I or Cmd+I to toggle admin panel
+                e.preventDefault();
+                setShowAdminPanel(prev => !prev);
+            } else if (e.key === 'Escape' && showAdminPanel) {
+                // Escape to close admin panel
+                setShowAdminPanel(false);
             }
         };
 
@@ -317,7 +325,7 @@ const App: React.FC = () => {
         return () => {
             window.removeEventListener('keydown', handleKeyDown);
         };
-    }, [nextSlide, prevSlide]);
+    }, [nextSlide, prevSlide, showAdminPanel]);
 
     return (
         <>
@@ -336,6 +344,20 @@ const App: React.FC = () => {
                 onNext={nextSlide}
                 onGoTo={goToSlide}
             />
+            
+            {/* Admin Panel Toggle Button */}
+            <button
+                onClick={() => setShowAdminPanel(true)}
+                className="fixed top-4 right-4 bg-slate-800/80 hover:bg-slate-700/80 backdrop-blur-sm text-white p-2 rounded-lg border border-white/10 transition-all z-40 group"
+                title="Open Image Manager (Ctrl+I)"
+            >
+                <span className="text-lg">🖼️</span>
+                <span className="absolute right-full mr-2 top-1/2 -translate-y-1/2 bg-slate-900 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                    Image Manager (Ctrl+I)
+                </span>
+            </button>
+            
+            {showAdminPanel && <AdminPanel isOpen={showAdminPanel} onClose={() => setShowAdminPanel(false)} />}
         </>
     );
 };
